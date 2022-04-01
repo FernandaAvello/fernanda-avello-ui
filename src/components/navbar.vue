@@ -1,11 +1,11 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" id="navbar-color">
-      <b-navbar-brand href="#" id="brand-tag">Fernanda Avello</b-navbar-brand>
+      <b-navbar-brand href="#" id="brand-tag" class="tituloSacramento">Fernanda Avello</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-          <b-nav-item href="#" class="px-5 item-navbar">About Me</b-nav-item>
+          <b-nav-item href="#section-aboutme" class="px-5 item-navbar">About Me</b-nav-item>
           <b-nav-item href="#" class="px-5 item-navbar">Education & Skills</b-nav-item>
           <b-nav-item href="#" class="px-5 item-navbar">Portfolio</b-nav-item>
           <b-nav-item href="#" class="px-5 item-navbar">Contact</b-nav-item>
@@ -14,21 +14,26 @@
     </b-navbar>
   </div>
 </template>
+
 <script>
 export default {
   name: "navBar",
 };
 </script>
 
-<style>
+<style scopedS>
 
 #navbar-color{
-    background-color: #a267ac;
+    background-color: #46244C;
+    padding: 0 1rem;
 }
 #brand-tag{
     font-size: 2rem;
 }
 .item-navbar {
-    font-size: 1.5rem;
+    font-size: 1rem; 
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #F0ECE3 !important;
 }
 </style>
