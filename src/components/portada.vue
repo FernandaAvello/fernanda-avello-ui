@@ -1,41 +1,44 @@
 <template>
-  <b-container>
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 about">
-        <b-img id="profile-img" src="@/assets/logo.png" rounded="circle" fluid alt="profile"></b-img>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 presentation">
-        <h1>¡Hola! <span class="name"> Soy Fernanda.</span></h1>
-        <h3>Soy una Front-End Developer</h3>
-      </div>
-    </div>
+  <b-container style="height: 500px;">
+    <b-row>
+      <b-col lg="6" md="6" sm="12">
+        <div id="profile-img"></div>
+      </b-col>
+      <b-col id="titulo" lg="6" md="6" sm="12">
+        <h1 class="tituloLato">¡Hola!<span class="name tituloLato"> <strong> Soy Fernanda.</strong></span></h1>
+        <h3 class="tituloLato">Soy una Front-End Developer</h3>
+      </b-col>
+    </b-row>
   </b-container>
   
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+  name: "portadaComponent"
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+#profile-img{
+  background-image: url(../assets/bla.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  height: 500px;
+  margin: auto;
+  margin-top: 4rem;
+  width: 500px;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+#titulo{
+  margin-top: 12rem;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+.name{
+  color: #46244C;
+  font-size: 2rem; 
 }
-a {
-  color: #42b983;
+h3{
+  margin-top: 2rem;
 }
 </style>
