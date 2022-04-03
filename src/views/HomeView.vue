@@ -6,7 +6,10 @@
     <section class="triangle"></section>
     <education />
     <section class="triangle2"></section>
-
+    <portfolio />
+    <section class="triangle"></section>
+    <contact />
+    <firma />
     
   </div>
   
@@ -16,6 +19,10 @@
 import portada from "@/components/portada.vue";
 import aboutMe from "@/components/aboutMe.vue";
 import education from "@/components/education.vue";
+import portfolio from "@/components/portfolio.vue";
+import contact from "@/components/contact.vue";
+import firma from "@/components/firma.vue";
+
 
 export default {
   name: "Home-view",
@@ -23,6 +30,10 @@ export default {
     portada,
     aboutMe,
     education,
+    portfolio,
+    contact,
+    firma,
   },
 };
+
 </script>
