@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" id="navbar-color">
+    <b-navbar toggleable="lg" type="dark" id="navbar-color" class="fixed-top">
       <b-navbar-brand href="#" id="brand-tag" class="tituloSacramento">Fernanda Avello</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
@@ -31,7 +31,8 @@ export default {
     font-size: 2rem;
 }
 .item-navbar {
-    font-size: 1rem; 
+    font-size: 1rem;
+    font-family: Lato;
 }
 .navbar-dark .navbar-nav .nav-link {
     color: #F0ECE3 !important;

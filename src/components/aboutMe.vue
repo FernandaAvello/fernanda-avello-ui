@@ -40,7 +40,7 @@ export default {
   padding-top: 9rem;
   text-align: center;
   color: #fff;
-  height: 800px;
+  height: 850px;
 }
 .aboutme {
   text-align: justify;
