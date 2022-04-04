@@ -6,7 +6,7 @@
         <b-row class="pt-5">
           <b-col md="4" sm="12">
             <b-card
-              title="Titulo Proyecto"
+              title="CRUD"
               img-src="https://picsum.photos/600/300/?image=25"
               img-alt="Image"
               style="max-width: 20rem; color: #000"
@@ -70,7 +70,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #section-portfolio {
   background-color: #46244c;
   padding-top: 9rem;
@@ -83,13 +83,13 @@ h2 {
 }
 
 .cardButton {
-  background-color: #f9f871 !important;
+  background-color: #B4F06E !important;
   color: black !important;
-  border-color: #f9f871 !important;
+  border-color: #B4F06E !important;
 }
 
 .cardButton:hover {
-  background-color: #fdbb5b !important;
-  border-color: #fdbb5b !important;
+  background-color: #6CA32A !important;
+  border-color: #6CA32A !important;
 }
 </style>
