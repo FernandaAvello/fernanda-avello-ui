@@ -12,12 +12,12 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #footer {
   background-color: #46244c;
   color: #fff;
-  padding-bottom: 0.5rem;
-  padding-top: 0.8rem;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
   text-align: center;
 }
 </style>
