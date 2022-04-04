@@ -4,15 +4,13 @@
       <h2 class="tituloSacramento">About Me</h2>
       <div class="aboutme">
         <p class="writeLato">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          Mi nombre es Fernanda, una joven chilena que tiene algo que contar...
+          Egresé de Enfermera el año 2014, y desde ese momento me dediqué a trabajar en el cuidado de los demás. 
+          Durantes estos años, aprendí el valor del trabajo en equipo, responsabilidad, honestidad y perserverancia. 
+          Hoy en día me enfrento a un tremendo desafío. Y es que el año 2022 trajo consigo muchos cambios, sin duda aprender a programar 
+          fue el más importante de ellos, y ¡me ha encantado!. No diré que todo ha sido color de rosa jajaja... pero aquí me ves, superando con mucho esfuerzo mis límites de aprendizaje día a día.
+          Me gusta disfrutar de mi tiempo en familia, dentro de mis hobbies me gusta mucho nadar (o intentarlo jajaja), jugar videojuegos y el maquillaje.
+          Sin duda tengo la convicción que lograré mis metas propuestas, y si estás aquí quiero invitarte a ser un espectador del fruto de mi trabajo como <em>FrontEnd Developer.</em> 
         </p>
       </div>
 
@@ -34,7 +32,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #section-aboutme {
   background-color: #46244C;
   padding-top: 9rem;
@@ -48,20 +46,27 @@ export default {
 h2 {
   padding-bottom: 2rem;
 }
+p {
+  font-size: 20px;
+}
 .foto-section{
-  padding-top: 5rem;
+  padding-top: 2.8rem;
 }
 
 #first-image{
   transform:rotate(-10deg);
+  max-height: 250px;
 }
 #second-image{
   transform: rotate(10deg);
+  max-height: 250px;
 }
 #third-image{
   transform:rotate(-10deg);
+  max-height: 250px;
 }
 #forth-image{
   transform: rotate(10deg);
+  max-height: 250px;
 }
 </style>
