@@ -1,5 +1,5 @@
 <template>
-  <div id="portada-container">
+  <div id="section-portada">
     <b-container>
       <b-row>
         <b-col lg="6" md="6" sm="12">
@@ -15,8 +15,10 @@
           <ul>
             <li class="htmlIcon"><font-awesome-icon icon="fa-brands fa-html5" /></li>
             <li class="cssIcon"><font-awesome-icon icon="fa-brands fa-css3-alt" /></li>
+            <li class="bootstrapIcon"><font-awesome-icon icon="fa-brands fa-bootstrap" /></li>
             <li class="jsIcon"><font-awesome-icon icon="fa-brands fa-js-square" /></li>
             <li class="vueIcon"><font-awesome-icon icon="fa-brands fa-vuejs" /></li>
+            
           </ul>
         </b-col>
       </b-row>
@@ -32,7 +34,7 @@ export default {
 
 <style scoped>
 
-#portada-container {
+#section-portada {
   background-color: #fff;
   height: 600px;
 }
@@ -71,10 +73,14 @@ ul li{
 .cssIcon{
   color: #0071bf;
 }
+.bootstrapIcon{
+  color: #7952b3;
+}
 .jsIcon{
   color: #f7e018;
 }
 .vueIcon{
   color: #49b180;
 }
+
 </style>
