@@ -124,5 +124,17 @@ export default {
 p {
   padding-top: 1.5rem;
   text-align: center;
+  font-size: 20px;
+
+}
+
+@media (max-width: 426px) {
+  #section-contact{
+   padding-top: 5rem;
+   height: 760px;
+  }
+  h2 {
+    padding-bottom: 1rem;
+  }
 }
 </style>
