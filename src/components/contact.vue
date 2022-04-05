@@ -141,13 +141,18 @@ p {
   .social-networks {
     font-size: 2.5rem;
     margin: 0 1rem;
+   
   }
 }
 
-@media (max-width: 321px) {
+@media (max-width: 369px) {
   .social-networks {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0 1rem;
+  }
+  p {
+    font-size: 15px;
+    
   }
 }
 </style>
