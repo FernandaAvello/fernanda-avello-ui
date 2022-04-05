@@ -15,7 +15,7 @@
       </div>
 
       <b-row>
-        <b-col lg="12" class="foto-section">
+        <b-col lg="12" class="foto-section" id="doodle">
           <img id="first-image" :src="require('../assets/image1.png')" class="img-thumbnail" alt="1">
           <img id="second-image" :src="require('../assets/image2.jpg')" class="img-thumbnail" alt="2">
           <img id="third-image" :src="require('../assets/image3.png')" class="img-thumbnail" alt="3">
@@ -50,7 +50,11 @@ p {
   font-size: 20px;
 }
 .foto-section{
-  padding-top: 2.8rem;
+  padding-top: 2.5rem;
+}
+#doodle {
+  background-image: url(../assets/doodle.png);
+  background-size: contain;
 }
 
 #first-image{
@@ -68,5 +72,21 @@ p {
 #forth-image{
   transform: rotate(10deg);
   max-height: 250px;
+}
+
+@media (max-width: 426px){
+  #section-aboutme {
+    padding-top: 5rem;
+    height: 720px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .foto-section{
+    display: none;
+  }
+  h2 {
+    padding-bottom: 1rem;
+  }
 }
 </style>

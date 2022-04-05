@@ -13,6 +13,8 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import VueCompositionAPI from '@vue/composition-api'
 
+import VueCarousel from 'vue-carousel'
+
 
 
 
@@ -30,6 +32,7 @@ library.add(faBootstrap)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(BootstrapVue)
 Vue.use(VueCompositionAPI)
+Vue.use(VueCarousel)
 
 
 

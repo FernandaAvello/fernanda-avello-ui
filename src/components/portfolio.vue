@@ -3,60 +3,59 @@
     <b-container>
       <h2 class="tituloSacramento">Portfolio</h2>
       <div>
-        <b-row class="pt-5">
-          <b-col md="4" sm="12">
-            <b-card
-              title="CRUD"
-              img-src="https://picsum.photos/600/300/?image=25"
-              img-alt="Image"
-              style="max-width: 20rem; color: #000"
-              class="mb-2 writeLato"
-            >
-              <b-card-text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </b-card-text>
+        <b-row class="card-carousel" style="color: black">
+          <b-col cols="12">
+            <carousel :perPageCustom="[[320,1],[375,1],[425, 1], [768, 2],[1024, 2]]">
+              <slide class="p-3">
+                <b-card
+                  title="Proyecto 1"
+                  img-src="https://picsum.photos/600/300/?image=25"
+                  img-alt="Image"
+                >
+                  <b-card-text>
+                    Aqui estará escrito una pequeña descripción del proyecto.
+                  </b-card-text>
+                  <b-button href="#" class="cardButton">Visitar Proyecto</b-button>
+                </b-card>
+              </slide>
+              <slide class="p-3">
+                <b-card
+                  title="Proyecto 2"
+                  img-src="https://picsum.photos/600/300/?image=25"
+                  img-alt="Image"
+                >
+                  <b-card-text>
+                    Aqui estará escrito una pequeña descripción del proyecto.
+                  </b-card-text>
+                  <b-button href="#" class="cardButton">Visitar Proyecto</b-button>
+                </b-card>
+              </slide>
+              <slide class="p-3">
+                <b-card
+                  title="Proyecto 3"
+                  img-src="https://picsum.photos/600/300/?image=25"
+                  img-alt="Image"
+                >
+                  <b-card-text>
+                    Aqui estará escrito una pequeña descripción del proyecto.
+                  </b-card-text>
 
-              <b-button href="#" class="cardButton writeLato"
-                >Visitar proyecto</b-button
-              >
-            </b-card>
-          </b-col>
-          <b-col md="4" sm="12">
-            <b-card
-              title="Titulo Proyecto"
-              img-src="https://picsum.photos/600/300/?image=25"
-              img-alt="Image"
-              style="max-width: 20rem; color: #000"
-              class="mb-2 writeLato"
-            >
-              <b-card-text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </b-card-text>
-
-              <b-button href="#" class="cardButton writeLato"
-                >Visitar proyecto</b-button
-              >
-            </b-card>
-          </b-col>
-          <b-col md="4" sm="12">
-            <b-card
-              title="Titulo Proyecto"
-              img-src="https://picsum.photos/600/300/?image=25"
-              img-alt="Image"
-              style="max-width: 20rem; color: #000"
-              class="mb-2 writeLato"
-            >
-              <b-card-text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </b-card-text>
-
-              <b-button href="#" class="cardButton writeLato"
-                >Visitar proyecto</b-button
-              >
-            </b-card>
+                  <b-button href="#" class="cardButton">Visitar Proyecto</b-button>
+                </b-card>
+              </slide>
+              <slide class="p-3">
+                <b-card
+                  title="Proyecto 4"
+                  img-src="https://picsum.photos/600/300/?image=25"
+                  img-alt="Image"
+                >
+                  <b-card-text>
+                    Aqui estará escrito una pequeña descripción del proyecto.
+                  </b-card-text>
+                  <b-button href="#" class="cardButton">Visitar Proyecto</b-button>
+                </b-card>
+              </slide>
+            </carousel>
           </b-col>
         </b-row>
       </div>
@@ -65,8 +64,14 @@
 </template>
 
 <script>
+import { Carousel, Slide } from "vue-carousel";
+
 export default {
   name: "portfolioComponent",
+  components: {
+    Carousel,
+    Slide,
+  },
 };
 </script>
 
@@ -81,15 +86,30 @@ export default {
 h2 {
   padding-top: 2rem;
 }
+.card-carousel {
+  padding-top: 3rem;
+}
 
 .cardButton {
-  background-color: #B4F06E !important;
+  background-color: #b4f06e !important;
   color: black !important;
-  border-color: #B4F06E !important;
+  border-color: #b4f06e !important;
 }
 
 .cardButton:hover {
-  background-color: #6CA32A !important;
-  border-color: #6CA32A !important;
+  background-color: #6ca32a !important;
+  border-color: #6ca32a !important;
+}
+@media (max-width: 426px){
+  #section-portfolio {
+    height: 720px;
+    padding-top: 5rem;
+  }
+  h2 {
+    padding-bottom: 1rem;
+  }
+  .card-carousel {
+    padding-top: 1rem;
+  }
 }
 </style>
