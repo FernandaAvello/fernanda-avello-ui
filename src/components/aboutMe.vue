@@ -77,7 +77,7 @@ p {
 @media (max-width: 426px){
   #section-aboutme {
     padding-top: 5rem;
-    height: 720px;
+    height: 800px;
   }
   p {
     font-size: 18px;
