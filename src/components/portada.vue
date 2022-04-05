@@ -1,20 +1,20 @@
 <template>
   <div id="section-portada">
     <b-container>
-      <b-row> 
+      <b-row>
         <b-col id="hide-sm" cols-lg="6" cols-md="6">
           <div id="profile-img"></div>
         </b-col>
         <b-col id="titulo" cols-lg="6" cols-md="6" cols-sm="12">
           <div id="contenido-portada">
-          <div id="profile-img-sm"></div>
-          <div>
-            <h1 class="tituloLato">
-              ¡Hola!<span class="name tituloLato">
-                <strong> Soy Fernanda.</strong></span
-              >
-            </h1>
-            <h3 class="tituloLato">Front-End Developer</h3>
+            <div id="profile-img-sm"></div>
+            <div>
+              <h1 class="tituloLato">
+                ¡Hola!<span class="name tituloLato">
+                  <strong> Soy Fernanda.</strong></span
+                >
+              </h1>
+              <h3 class="tituloLato">Front-End Developer</h3>
             </div>
           </div>
           <ul>
@@ -100,7 +100,7 @@ ul li {
 }
 
 @media (max-width: 426px) {
-  #section-portada{
+  #section-portada {
     height: 350px;
   }
   #hide-sm {
@@ -119,53 +119,54 @@ ul li {
   #titulo {
     margin-top: 4rem;
     font-size: 40px;
-    
   }
-  #contenido-portada{
+  #contenido-portada {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  h1, h3{
+  h1,
+  h3 {
     font-size: 1.5rem;
   }
-  .name{
+  .name {
     font-size: 2rem;
   }
-  ul{
+  ul {
     margin: 0;
     padding: 0;
   }
-  ul li{
+  ul li {
     font-size: 3.5rem;
     margin-right: 1.5rem;
   }
-  .vueIcon{
+  .vueIcon {
     margin-right: 0;
   }
-  
 }
-@media (max-width: 321px){
+@media (max-width: 321px) {
   #section-portada {
     height: 340px;
     padding-top: 1rem;
   }
 
-  h1, h3{
+  h1,
+  h3 {
     font-size: 1.2rem;
   }
-  .name{
+  .name {
     font-size: 1.8rem;
   }
 
-  ul{
+  ul {
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-around;
   }
-  ul li{
+  ul li {
     font-size: 3rem;
-    margin-right: 1rem;
-}
+  }
 }
 </style>
 

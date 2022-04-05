@@ -91,7 +91,8 @@ p {
 }
 @media (max-width: 321px){
   #section-aboutme {
-    height: 900px;
+    height: auto;
+    padding-bottom: 10px;
   }
 }
 </style>
