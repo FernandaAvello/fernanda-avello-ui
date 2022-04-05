@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" id="navbar-color" class="fixed-top">
+    <b-navbar v-b-scrollspy:scrollspy-nested toggleable="lg" type="dark" id="navbar-color" class="fixed-top">
       <b-navbar-brand href="#section-portada" id="brand-tag" class="tituloSacramento">Fernanda Avello</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
@@ -26,6 +26,7 @@ export default {
 #navbar-color{
     background-color: #46244C;
     padding: 0 1rem;
+    border-bottom: 1px solid #fff;
 }
 #brand-tag{
     font-size: 2rem;

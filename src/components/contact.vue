@@ -106,7 +106,7 @@ export default {
   
 }
 .social-networks {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #6CA32A ;
   margin: 0 2rem;
 }
