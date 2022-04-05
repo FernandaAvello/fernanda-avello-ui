@@ -89,7 +89,7 @@ p {
     padding-bottom: 1rem;
   }
 }
-@media (max-width: 321px){
+@media (max-width: 369px){
   #section-aboutme {
     height: auto;
     padding-bottom: 10px;

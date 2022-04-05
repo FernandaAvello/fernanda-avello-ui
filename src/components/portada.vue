@@ -144,7 +144,7 @@ ul li {
     margin-right: 0;
   }
 }
-@media (max-width: 321px) {
+@media (max-width: 369px) {
   #section-portada {
     height: 340px;
     padding-top: 1rem;
