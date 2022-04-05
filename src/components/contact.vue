@@ -102,11 +102,11 @@ export default {
   height: 700px;
 }
 .networks-icons {
-  text-align: center;
-  
+  text-align: center;  
 }
+
 .social-networks {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #6CA32A ;
   margin: 0 2rem;
 }
@@ -136,5 +136,17 @@ p {
   h2 {
     padding-bottom: 1rem;
   }
+   .social-networks {
+    font-size: 2rem;
+    margin: 0 2rem;
+}
+}
+
+@media (max-width: 321px) {
+  .social-networks {
+  font-size: 2.5rem;
+  margin: 0 1rem;
+  
+}
 }
 </style>

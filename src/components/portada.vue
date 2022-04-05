@@ -145,6 +145,28 @@ ul li {
   }
   
 }
+@media (max-width: 321px){
+  #section-portada {
+    height: 340px;
+    padding-top: 1rem;
+  }
+
+  h1, h3{
+    font-size: 1.2rem;
+  }
+  .name{
+    font-size: 1.8rem;
+  }
+
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  ul li{
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+}
 </style>
 
 
